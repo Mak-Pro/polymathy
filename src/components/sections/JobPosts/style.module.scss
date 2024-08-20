@@ -1,0 +1,95 @@
+.jobposts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+
+  &__header {
+    position: relative;
+    order: 0;
+
+    &_title {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    &_actions {
+      display: flex;
+      align-items: center;
+      gap: 0 12px;
+      padding: 15px $container-global-padding;
+      order: 1;
+      position: sticky;
+      top: 54px;
+      background-color: $tgBgColor;
+      z-index: 5;
+      margin: 0 calc(-1 * $container-global-padding);
+    }
+  }
+
+  &__body {
+    position: relative;
+    min-height: 260px;
+    order: 2;
+  }
+
+  &__footer {
+    position: relative;
+    order: 3;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 calc(-1 * $container-global-padding);
+
+    &_item {
+      border-bottom: 1px solid $borderColor;
+      padding: 0 $container-global-padding;
+    }
+  }
+
+  &_sort {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    background-color: $boxBgColor;
+    border-radius: 67px;
+    padding: 8px;
+    max-width: 520px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(calc(-50% - $container-global-padding));
+    width: calc(100% - $container-global-padding * 2);
+    margin: 0 $container-global-padding;
+    top: calc($tgViewportHeight - 84px);
+    z-index: 50;
+
+    &_btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 48px;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 99px;
+      background-color: $white;
+      flex: 1;
+      transition: all 0.3s ease 0s;
+
+      &_active {
+        background-color: $blue150;
+        pointer-events: none;
+      }
+    }
+  }
+}

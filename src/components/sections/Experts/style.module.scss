@@ -1,0 +1,29 @@
+.experts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+
+  &__header {
+    position: relative;
+    padding-bottom: 12px;
+  }
+
+  &__body {
+    position: relative;
+  }
+
+  &__footer {
+    position: relative;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 calc(-1 * $container-global-padding);
+
+    &_item {
+      border-bottom: 1px solid $borderColor;
+      padding: 0 $container-global-padding;
+    }
+  }
+}

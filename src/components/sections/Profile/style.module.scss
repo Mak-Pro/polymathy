@@ -1,0 +1,47 @@
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $gray100;
+  padding: 20px $container-global-padding;
+  margin: 0 calc(-1 * $container-global-padding);
+
+  &__header {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+    color: $white;
+    background-color: $gray500;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    font-size: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__body {
+    position: relative;
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 7px 0;
+  }
+}

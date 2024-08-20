@@ -1,0 +1,105 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  height: $tgViewportStableHeight;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 0 $container-global-padding;
+  background-color: $tgBgColor;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+
+  &_show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+  }
+
+  &__body {
+    padding: 5vh 16px 0;
+    flex: 1;
+  }
+
+  &__footer {
+    padding: 5px 0;
+    position: relative;
+
+    * {
+      flex: 1;
+    }
+
+    &_buttons {
+      display: flex;
+      align-items: center;
+      gap: 0 8px;
+      transition: all 0.3s ease 0s;
+
+      &_hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.slider__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+
+  &_body {
+    margin-bottom: 3vh;
+  }
+
+  &_footer {
+    line-height: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.slider {
+  &_body {
+    position: relative;
+  }
+
+  &__footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      left: auto !important;
+      right: auto !important;
+      transform: none !important;
+    }
+  }
+}
+
+.last {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+
+  &__show {
+    opacity: 1;
+    visibility: visible;
+  }
+}

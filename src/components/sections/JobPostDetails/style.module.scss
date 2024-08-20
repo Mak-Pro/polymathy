@@ -1,0 +1,81 @@
+.jp__details {
+  padding-top: 15px;
+
+  &_title {
+    margin-bottom: 4px;
+  }
+
+  &_price {
+    font-size: 28px;
+    font-weight: 700;
+    color: $tgTextColor;
+    line-height: 1.285;
+    margin-bottom: 13px;
+  }
+
+  &_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 15px;
+
+    & > * {
+      max-width: initial !important;
+    }
+  }
+
+  &_text {
+    font-size: 14px;
+    color: $textBaseColor;
+
+    & > * {
+      margin-bottom: 18px;
+    }
+  }
+
+  &_properties {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    & > * {
+      display: inline-flex;
+      align-items: center;
+      gap: 0 4px;
+
+      &:last-of-type {
+        gap: 0 12px;
+      }
+    }
+  }
+
+  &_btn {
+    width: 100%;
+  }
+
+  &_deactivate {
+    position: relative;
+    &_text {
+      font-size: 14px;
+      color: $black500;
+      text-align: center;
+      padding: 20px 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0;
+
+      &_note {
+        color: $gray500;
+      }
+    }
+
+    &_actions {
+      border-top: 1px solid $gray100;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 15px;
+      gap: 10px 0;
+    }
+  }
+}

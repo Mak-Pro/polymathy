@@ -1,0 +1,44 @@
+.jp__submit {
+  position: relative;
+
+  &_inactive {
+    opacity: 0.5;
+    filter: grayscale(1);
+    pointer-events: none;
+  }
+
+  &_expander {
+    margin-bottom: 14px !important;
+  }
+
+  &_info {
+    display: flex;
+    white-space: nowrap;
+    gap: 0 20px;
+    color: $tgTextColor;
+    margin-bottom: 8px;
+
+    h5 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  &_tags {
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+  }
+}

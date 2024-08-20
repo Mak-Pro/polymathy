@@ -1,0 +1,51 @@
+.invite {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    background-color: $boxBgColor;
+    margin: 0 calc(-1 * $container-global-padding);
+    padding: 25px $container-global-padding;
+
+    &_title {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+  }
+
+  &__modal_header {
+    color: $black500;
+    text-align: center;
+    padding: 21px $container-global-padding;
+  }
+
+  &__modal_body {
+    padding: 15px $container-global-padding 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    border-top: 1px solid $gray100;
+    border-bottom: 1px solid $gray100;
+  }
+
+  &__modal_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px $container-global-padding;
+  }
+}
+
+.copy__btn {
+  color: $blue500 !important;
+
+  &_copied {
+    color: $green500 !important;
+    background-color: $green50 !important;
+  }
+}

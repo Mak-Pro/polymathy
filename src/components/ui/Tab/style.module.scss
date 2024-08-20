@@ -1,0 +1,72 @@
+.tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0 3px;
+  background-color: $boxBgColor;
+  color: $tgTextColor;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+
+  &__inactive {
+    pointer-events: none;
+
+    & > * {
+      opacity: 0.3;
+    }
+  }
+
+  &:hover {
+    [alt="Go"] {
+      left: 5px;
+    }
+  }
+
+  &__link {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+  }
+
+  &__icon {
+    position: relative;
+  }
+
+  &__text {
+    flex: 1;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+  }
+
+  &__arrow {
+    position: relative;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  &__note {
+    font-size: 12px;
+    color: $blue500;
+    background-color: $blue150;
+    padding: 2px 8px;
+    border-radius: 100px;
+    opacity: 1 !important;
+  }
+}
+
+.clear {
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 500;
+  color: $red200;
+}

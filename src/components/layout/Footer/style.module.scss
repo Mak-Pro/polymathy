@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: 1px solid $borderColor;
+  padding: 22px $container-global-padding 110px;
+  margin-top: -1px;
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+
+  &__copy {
+    font-size: 12px;
+    color: $textBaseColor;
+  }
+}

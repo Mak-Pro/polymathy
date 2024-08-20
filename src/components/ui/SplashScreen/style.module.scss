@@ -1,0 +1,20 @@
+.screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    min-height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: $tgTextColor;
+    line-height: 1.286;
+    text-align: center;
+  }
+}

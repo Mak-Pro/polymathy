@@ -1,0 +1,70 @@
+:export {
+  // telegram
+  tgBgColor: $tgBgColor;
+  tgTextColor: $tgTextColor;
+  tgSecondaryBgColor: $tgSecondaryBgColor;
+  tgAccentTextColor: $tgAccentTextColor;
+  tgHintColor: $tgHintColor;
+  tgLinkColor: $tgLinkColor;
+  tgButtonBgColor: $tgButtonBgColor;
+  tgButtonTextColor: $tgButtonTextColor;
+  tgHeaderBgColor: $tgHeaderBgColor;
+  tgSectionBgColor: $tgSectionBgColor;
+  tgSectionHeaderTextColor: $tgSectionHeaderTextColor;
+  tgSubTitleTextColor: $tgSubTitleTextColor;
+  tgDestructiveTextColor: $tgDestructiveTextColor;
+  tgColorScheme: $tgColorScheme;
+  tgViewportHeight: $tgViewportHeight;
+  tgViewportStableHeight: $tgViewportStableHeight;
+
+  // colors
+  white: $white;
+
+  black400: $black400;
+  black450: $black450;
+  black500: $black500;
+  blue100: $blue100;
+  blue150: $blue150;
+  blue500: $blue500;
+  gray50: $gray50;
+  gray100: $gray100;
+  gray200: $gray200;
+  gray300: $gray300;
+  gray400: $gray400;
+  gray500: $gray500;
+  red50: $red50;
+  red200: $red200;
+  green50: $green50;
+  green500: $green500;
+
+  invert: $invert;
+  contrastLight: $contrastLight;
+  contrastStrong: $contrastStrong;
+  textBaseColor: $textBaseColor;
+  boxBgColor: $boxBgColor;
+  borderColor: $borderColor;
+  navigationBgColor: $navigationBgColor;
+  labelColor: $labelColor;
+  labelFocusColor: $labelFocusColor;
+  fieldFocusBorderColor: $fieldFocusBorderColor;
+  buttonDisabledBgColor: $buttonDisabledBgColor;
+  preloaderBgColor: $preloaderBgColor;
+
+  // breakpoints
+  width349: $width-349;
+  width599: $width-599;
+  width767: $width-767;
+  width992: $width-992;
+  width1199: $width-1199;
+  width1299: $width-1299;
+  width1399: $width-1399;
+  width1440: $width-1440;
+  width1499: $width-1499;
+  width1600: $width-1600;
+
+  // layout
+  containerWidth: $container-width;
+
+  containerGlobalPadding: $container-global-padding;
+  minHeight: $min-height;
+}

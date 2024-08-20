@@ -1,0 +1,42 @@
+.expander {
+  background-color: $boxBgColor;
+  margin: 0 calc(-1 * $container-global-padding);
+  padding: 10px $container-global-padding;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    margin-right: -15px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease 0s;
+
+    &_rotated {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__body {
+    font-size: 14px;
+    color: $textBaseColor;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+
+    &_open {
+      max-height: 84px;
+    }
+
+    p {
+      padding-bottom: 4px;
+      -webkit-line-clamp: 4;
+      line-clamp: 4;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}

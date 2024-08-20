@@ -1,0 +1,19 @@
+.top__area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $borderColor;
+  min-height: 50px;
+  margin: 0 calc(-1 * $container-global-padding);
+  padding: 5px 20px;
+  position: relative;
+  z-index: 50;
+
+  &_back {
+    margin-left: -15px;
+  }
+
+  [alt="back"] {
+    filter: contrast($contrastStrong) invert($invert);
+  }
+}

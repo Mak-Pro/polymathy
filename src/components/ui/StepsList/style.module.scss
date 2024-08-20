@@ -1,0 +1,48 @@
+.steps__list {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 500;
+  color: $tgTextColor;
+  padding-left: 4px;
+
+  li {
+    position: relative;
+    display: flex;
+    padding-bottom: 26px;
+
+    &::before {
+      content: "";
+      min-width: 8px;
+      min-height: 8px;
+      max-width: 8px;
+      max-height: 8px;
+      background-color: $blue500;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px #dbe4ea;
+      margin-right: 15px;
+      position: relative;
+      top: 4px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 2px;
+      background-color: #dbe4ea;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 3px;
+      z-index: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+// telegram
+$tgBgColor: var(--tg-theme-bg-color, #ffffff);
+$tgTextColor: var(--tg-theme-text-color, #1e2126);
+$tgSecondaryBgColor: var(--tg-theme-secondary-bg-color);
+$tgAccentTextColor: var(--tg-theme-accent-text-color);
+$tgHintColor: var(--tg-theme-hint-color);
+$tgLinkColor: var(--tg-theme-link-color);
+$tgButtonBgColor: var(--tg-theme-button-color, #499fdf);
+$tgButtonTextColor: var(--tg-theme-button-text-color, #ffffff);
+$tgHeaderBgColor: var(--tg-theme-header-bg-color);
+$tgSectionBgColor: var(--tg-theme-section-bg-color);
+$tgSectionHeaderTextColor: var(--tg-theme-section-header-text-color);
+$tgSubTitleTextColor: var(--tg-theme-subtitle-text-color);
+$tgDestructiveTextColor: var(--tg-theme-destructive-text-color);
+$tgColorScheme: var(--tg-color-scheme);
+$tgViewportHeight: var(--tg-viewport-height);
+$tgViewportStableHeight: var(--tg-viewport-stable-height);
+
+// colors
+$white: #ffffff;
+
+$black400: #3d424b;
+$black450: #27272e;
+$black500: #1e2126;
+
+$blue100: #ecf7ff;
+$blue150: #e0edff;
+$blue500: #0a6cff;
+
+$gray50: #f5f7fa;
+$gray100: #dee2e8;
+$gray200: #a1a6ad;
+$gray300: #a1a6b0;
+$gray400: #8f96a3;
+$gray500: #6b7484;
+
+$red50: #fdf2f2;
+$red200: #e64c37;
+
+$green500: #4a6246;
+$green50: #effced;
+
+$invert: var(--invert);
+$contrastLight: var(--contrast-light);
+$contrastStrong: var(--contrast-strong);
+$textBaseColor: var(--text-base-color);
+$boxBgColor: var(--box-bg-color);
+$borderColor: var(--border-color);
+$navigationBgColor: var(--navigation-bg-color);
+$labelColor: var(--label-color);
+$labelFocusColor: var(--label-focus-color);
+$fieldFocusBorderColor: var(--field-focus-border-color);
+$buttonDisabledBgColor: var(--button-disabled-bg-color);
+$preloaderBgColor: var(--preloader-bg-color);
+
+// breakpoints
+$width-349: 349px;
+$width-599: 599px;
+$width-767: 767px;
+$width-992: 992px;
+$width-1199: 1199px;
+$width-1299: 1299px;
+$width-1399: 1399px;
+$width-1440: 1440px;
+$width-1499: 1499px;
+$width-1600: 1600px;
+
+// layout
+$container-width: 1240px;
+$container-global-padding: 20px;
+$min-height: 460px;

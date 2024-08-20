@@ -1,0 +1,43 @@
+.bar {
+  position: fixed;
+  left: 50%;
+  top: 58px;
+  transform: translateX(calc(-50% - $container-global-padding * 2))
+    translateY(-100%);
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $boxBgColor;
+  color: $tgTextColor;
+  width: calc(100% - $container-global-padding * 2);
+  margin: 0 $container-global-padding * 2;
+  max-width: 520px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+
+  &__show {
+    transform: translateX(calc(-50% - $container-global-padding * 2))
+      translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__loading {
+    color: $blue500;
+    background-color: $blue100;
+  }
+
+  &__success {
+    color: $green500;
+    background-color: $green50;
+  }
+
+  &__error {
+    color: $red200;
+    background-color: $red50;
+  }
+}

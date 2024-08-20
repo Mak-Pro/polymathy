@@ -1,0 +1,23 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 560px;
+  background-color: $tgBgColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px $container-global-padding;
+  border-bottom: 1px solid $borderColor;
+  z-index: 50;
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    // filter: invert($invert) contrast($contrastStrong);
+  }
+}

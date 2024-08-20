@@ -1,0 +1,156 @@
+@import "reset";
+@import "variables.scss";
+
+:root {
+  --invert: 0;
+  --contrast-light: 1;
+  --contrast-strong: 10;
+  --text-base-color: #6b7484;
+  --box-bg-color: rgba(245, 247, 250, 1);
+  --border-color: #dee2e8;
+  --navigation-bg-color: #27272e;
+  --label-color: #a1a6ad;
+  --label-focus-color: #3d424b;
+  --field-focus-border-color: #0a6cff;
+  --button-disabled-bg-color: #dee2e8;
+  --preloader-bg-color: rgba(245, 247, 250, 0.5);
+}
+
+.light {
+}
+.dark {
+  --invert: 1;
+  --contrast-light: 1.5;
+  --contrast-strong: 10;
+  --text-base-color: #a1a6ad;
+  --box-bg-color: rgba(245, 247, 250, 0.1);
+  --border-color: #3d424b;
+  --navigation-bg-color: var(--border-color);
+  --label-color: #a1a6ad;
+  --label-focus-color: #8f96a3;
+  --field-focus-border-color: #ecf7ff;
+  --button-disabled-bg-color: rgba(245, 247, 250, 0.1);
+  --preloader-bg-color: rgba(245, 247, 250, 0.1);
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.42;
+  cursor: default;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 560px;
+  min-height: $tgViewportHeight;
+  color: $tgTextColor;
+  background: $tgBgColor;
+  overscroll-behavior: contain;
+  position: relative;
+  margin: 0 auto;
+}
+
+main {
+  padding: 55px $container-global-padding 0;
+  min-height: $min-height;
+  // overflow: hidden;
+
+  &.alt {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  &.posts {
+    padding-bottom: 90px;
+  }
+}
+
+h1 {
+  @include fontType(inherit, 28px, 700, normal, 1.28);
+}
+
+h2 {
+  @include fontType(inherit, 24px, 500, normal, 1.33);
+}
+
+h3 {
+  @include fontType(inherit, 20px, 500, normal, 1.4);
+}
+
+h4 {
+  @include fontType(inherit, 18px, 500, normal, 1.33);
+}
+
+h5 {
+  @include fontType(inherit, 16px, 500, normal, 1.5);
+}
+
+h6 {
+  @include fontType(inherit, 14px, 500, normal, 1.43);
+}
+
+.page__title {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.danger {
+  color: $red200 !important;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+::-webkit-file-upload-button {
+  display: none;
+}
+
+::file-selector-button {
+  display: none;
+}
+
+.swiper-pagination {
+  &-bullets {
+  }
+
+  &-bullet {
+    transform: scale(1) !important;
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 17px !important;
+    background-color: $tgTextColor !important;
+    transition: all 0.3s ease 0s !important;
+    opacity: 0.3 !important;
+
+    &-active {
+      width: 24px !important;
+      background-color: $blue500 !important;
+      opacity: 1 !important;
+    }
+  }
+
+  &-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: none !important;
+  }
+}

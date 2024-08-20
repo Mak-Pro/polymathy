@@ -1,0 +1,36 @@
+.points {
+  position: relative;
+  padding: 15px 0;
+
+  &__title {
+    margin-bottom: 16px !important;
+  }
+
+  &__ballance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $boxBgColor;
+    margin: 0 calc(-1 * $container-global-padding);
+    padding: 16px $container-global-padding;
+
+    &_count {
+      display: inline-flex;
+      align-items: center;
+      gap: 0 4px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.428;
+    color: $textBaseColor;
+    padding: 20px 0;
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+}
